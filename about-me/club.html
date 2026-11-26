@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Учебный клуб</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Обо мне</a></li>
+                <li><a href="hobby.html">Мои увлечения</a></li>
+                <li><a href="college.html">Мой колледж</a></li>
+                <li><a href="season.html">Мое любимое время года</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="application.html">Заявка</a></li>
+                <li><a href="club.html">Клуб</a></li>
+                <li><a href="styles-check.html">Стили</a></li>
+                <li><a href="flex-lab.html">Лабороторная Flexbox</a></li>
+                <li><a href="grid-lab.html">Лабороторная Grid</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="position-lab.html">Лаборатория Position</a></li>
+                <li><a href="responsive-lab.html">Лаборатория Адаптивности</a></li>
+                <li><a href="form-style-lab.html">Лаборатория Form-style</a></li>
+                <li><a href="project.html">Итог</a></li>
+                <li><a href="js-lab.html">js лаборатория</a></li>
+                <li><a href="dom-lab.html">DOM лаборатория</a></li>
+                <li><a href="events-lab.html">Events лаборатория</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="top">Учебный клуб</h1>
+
+        <section>
+            <h2>О клубе</h2>
+            <p>Наш учебный клуб приглашает вас на встречи! Ждем <strong>всех</strong> студентов!</p>
+        </section>
+
+        <section>
+            <h2 class="club-news">Новость о клубе!</h2>
+            <p class="about-news">
+                Наш клуб объявил набор! <strong>Мы ждем новых студентов</strong> в наших кругах!<br> 
+                В клубе жизнь станет веселее и активнее!
+            </p>
+        </section>
+        <table>
+            <caption>Таблица встреч на неделю</caption>
+            <thead>
+                <tr>
+                    <th scope="col">День</th>
+                    <th scope="col">Тема</th>
+                    <th scope="col">Кабинет</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Понедельник</td>
+                    <td>Графический дизайн</td>
+                    <td>308</td>
+                </tr>
+                <tr>
+                    <td>Среда</td>
+                    <td>HTML</td>
+                    <td>116</td>
+                </tr>
+                <tr>
+                    <td>Пятница</td>
+                    <td>Мероприятия в колледже</td>
+                    <td>102</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <th colspan="2" scope="row">Всего встреч за неделю:</th>
+                    <td>3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <hr>
+
+        <h2>Заявка на вступление в клуб</h2>
+
+        <form action="club.html" method="get">
+
+            <p>
+                <label for="student">Имя</label>
+                <input id="student" name="student" type="text"
+                minlength="2" required>
+            </p>
+
+            <p>
+                <label for="topic">Формат встреч</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Выберите формат</option>
+                    <option value="offline">В колледже</option>
+                    <option value="online">Дистанционно</option>
+                </select>
+            </p>
+             
+            <p>
+                <input id="reminder" name="reminder" type="checkbox" value="yes">
+                <label for="reminder">Отправлять новости о клубе колледжа</label>
+            </p>
+            <button type="submit">Отправить заявку</button>
+            
+
+        </form>
+        
+    </main>
+    <footer class="page-footer">
+        <p>Автор: Андреев Айдар. Учебная практика УП09.</p>
+    </footer>
+</body>
+</html>
